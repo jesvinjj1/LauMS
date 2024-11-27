@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #E8F0F2;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #B3001B;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #BDC3C7;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #2C3E50;
+    background-color: #F9FAFB;
+}
+
+.input-group input:focus {
+    border-color: #B3001B;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.icons-email::before,
+.icons-password::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 10px;
+    background-size: contain;
+}
+
+.icons-email::before {
+    background-image: url('icons/email.png'); 
+}
+
+.icons-password::before {
+    background-image: url('icons/password.png'); 
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #7F8C8D;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember-forgot a {
+    color: #B3001B;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background: #B3001B;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #B3001B;
+}
+
+.register {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7F8C8D;
+}
+
+.register a {
+    color: #B3001B;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
